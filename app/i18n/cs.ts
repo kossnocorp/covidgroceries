@@ -1,15 +1,15 @@
 import { I18nLocale } from '.'
 
 const pluralizeForms: Record<string, string[]> = {
-  serving: ['порция', 'порции', 'порций'],
-  day: ['день', 'дня', 'дней'],
-  adult: ['взрослый', 'взрослых', 'взрослых'],
-  kid: ['ребенок', 'ребенка', 'детей'],
-  roll: ['рулон', 'рулона', 'рулонов']
+  serving: ['porce', 'porce', 'porcí'],
+  day: ['den', 'dny', 'dní'],
+  adult: ['dospělý', 'dospělí', 'dospělých'],
+  kid: ['dítě', 'děti', 'dětí'],
+  roll: ['role', 'role', 'rolí']
 }
 
 const ruLocale: I18nLocale = {
-  localeName: 'Русский',
+  localeName: 'Česky',
 
   title: 'Генератор списка покупок во время пандемии коронавируса',
   description:
@@ -85,88 +85,88 @@ const ruLocale: I18nLocale = {
   translate: (str: string) => {
     switch (str) {
       case 'Sauce':
-        return 'Соус'
+        return 'Omáčka'
 
       case 'Meat':
-        return 'Мясо'
+        return 'Maso'
 
       case 'Pesto':
-        return 'Песто'
+        return 'Pesto'
 
       case 'Arrabiata':
-        return 'Арабиата'
+        return 'Arrabiata'
 
       case 'Tomato sauce':
-        return 'Томатный'
+        return 'Rajčatová'
 
       case 'Tomato':
-        return 'Томатный'
+        return 'Rajčatová'
 
       case 'Pasta':
-        return 'Макароны'
+        return 'Těstoviny'
 
       case 'Rice':
-        return 'Рис'
+        return 'Rýže'
 
       case 'Chickpeas':
-        return 'Нут'
+        return 'Cizrna'
 
       case 'Bulgur':
-        return 'Булгур'
+        return 'Bulgur'
 
       case 'Lentils':
-        return 'Чечевица'
+        return 'Čočky'
 
       case 'Couscous':
-        return 'Кускус'
+        return 'Kuskus'
 
       case 'Buckwheat':
-        return 'Гречка'
+        return 'Pohanka'
 
       case 'Potato':
-        return 'Картошка'
+        return 'Brambory'
 
       case 'Veggie':
-        return 'Овощи'
+        return 'Zelenina'
 
       case 'Ravioli':
-        return 'Равиоли'
+        return 'Ravioli'
 
       case 'Fish':
-        return 'Рыба'
+        return 'Ryba'
 
       case 'Chicken':
-        return 'Курица'
+        return 'Kuřecí'
 
       case 'Ingredients':
-        return 'Ингредиенты'
+        return 'Přísady'
 
       case 'Side':
-        return 'Гарнир'
+        return 'Příloha'
 
       case 'Eggs':
-        return 'Яйца'
+        return 'Vejce'
 
       case 'Oatmeal':
-        return 'Каша'
+        return 'Ovesné vločky'
 
       case 'Cereals':
-        return 'Хлопья'
+        return 'Cereálie'
 
       case 'Cheese pancakes':
-        return 'Сырники'
+        return 'Tvarohové lívanečky'
 
       case 'Cottage cheese':
-        return 'Творог'
+        return 'Tvaroh'
 
       case 'Toilet paper':
-        return 'Туалетная бумага'
+        return 'Toaletní papír'
 
       case 'Tea':
-        return 'Чай'
+        return 'Čaj'
 
       case 'Coffee':
-        return 'Кофе'
+        return 'Káva'
 
       default:
         return str
@@ -179,4 +179,4 @@ const ruLocale: I18nLocale = {
     return pluralizeForms[str][form]
   }
 }
-export default ruLocale
+export default csLocale
