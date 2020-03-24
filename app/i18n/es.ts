@@ -1,6 +1,6 @@
 import pluralize from 'pluralize'
 
-const enLocale = {
+const esLocale = {
   localeName: 'Español',
 
   title: 'Generador de lista de compras de Coronavirus',
@@ -178,4 +178,4 @@ const enLocale = {
     return pluralizeForms[str][form]
   }
 }
-export default csLocale
+export default esLocale
