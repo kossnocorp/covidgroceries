@@ -115,7 +115,7 @@ const ruLocale: I18nLocale = {
         return 'Bulgur'
 
       case 'Lentils':
-        return 'Čočky'
+        return 'Čočka'
 
       case 'Couscous':
         return 'Kuskus'
@@ -139,7 +139,7 @@ const ruLocale: I18nLocale = {
         return 'Kuřecí'
 
       case 'Ingredients':
-        return 'Přísady'
+        return 'Ingredience'
 
       case 'Side':
         return 'Příloha'
@@ -154,7 +154,7 @@ const ruLocale: I18nLocale = {
         return 'Cereálie'
 
       case 'Cheese pancakes':
-        return 'Tvarohové lívanečky'
+        return 'Tvarohové lívance'
 
       case 'Cottage cheese':
         return 'Tvaroh'
