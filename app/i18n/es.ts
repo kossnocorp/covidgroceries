@@ -138,7 +138,7 @@ const esLocale = {
         return 'Ingredientes'
 
       case 'Side':
-        return 'Příloha'
+        return 'Guarnición'
 
       case 'Eggs':
         return 'Huevos'
