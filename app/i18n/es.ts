@@ -80,8 +80,102 @@ const enLocale = {
     }
   },
 
-  translate: (str: string) => str,
+  translate: (str: string) => {
+    switch (str) {
+      case 'Sauce':
+        return 'Salsa'
 
-  pluralize: (str: string, num: number) => pluralize(str, num)
+      case 'Meat':
+        return 'Carne'
+
+      case 'Pesto':
+        return 'Pesto'
+
+      case 'Arrabiata':
+        return 'Arrabiata'
+
+      case 'Tomato sauce':
+      case 'Tomato':
+        return 'Salsa de tomate'
+
+      case 'Pasta':
+        return 'Pasta'
+
+      case 'Rice':
+        return 'Arroz'
+
+      case 'Chickpeas':
+        return 'Garbanzos'
+
+      case 'Bulgur':
+        return 'Bulgur'
+
+      case 'Lentils':
+        return 'Lentejas'
+
+      case 'Couscous':
+        return 'Cuscús'
+
+      case 'Buckwheat':
+        return 'Alforfón'
+
+      case 'Potato':
+        return 'Papa'
+
+      case 'Veggie':
+        return 'Vegetariana'
+
+      case 'Ravioli':
+        return 'Ravioli'
+
+      case 'Fish':
+        return 'Pescado'
+
+      case 'Chicken':
+        return 'Pollo'
+
+      case 'Ingredients':
+        return 'Ingredientes'
+
+      case 'Side':
+        return 'Příloha'
+
+      case 'Eggs':
+        return 'Huevos'
+
+      case 'Oatmeal':
+        return 'Harina de avena'
+
+      case 'Cereals':
+        return 'Cereales'
+
+      case 'Cheese pancakes':
+        return 'Tortitas de queso'
+
+      case 'Cottage cheese':
+        return 'Queso cottage'
+
+      case 'Toilet paper':
+        return 'Papel Higiénico'
+
+      case 'Paper towels':
+        return 'Papel toalla'
+
+      case 'Tea':
+        return 'Te'
+
+      case 'Coffee':
+        return 'Café'
+
+      default:
+        return str
+    }
+  },
+
+  pluralize: (str: string, num: number) => {
+    const mod = num % 10
+    const form = (num >= 10 && num <= 20) || mod > 4 ? 2 : mod === 1 ? 0 : 1
+    return pluralizeForms[str][form]
+  }
 }
-export default enLocale
+export default csLocale
