@@ -1,7 +1,15 @@
-import pluralize from 'pluralize'
+import  {  I18nLocale  }  from  '.'
 
-const esLocale = {
-  localeName: 'Español',
+const  pluralizeForms : Record < string ,  string [ ] >  =  {
+  serving : [ 'porción' ,  'porciones' ,  'porciones' ] ,
+  day : [ 'día' ,  'día' ,  'días' ] ,
+  adult : [ 'adulto' ,  'adultos' ,  'adultos' ] ,
+  kid : [ 'niño' ,  'niño' ,  'niños' ] ,
+  roll : [ 'bolillo' ,  'bolillo' ,  'bolillos' ]
+}
+
+const  esLocale : I18nLocale  =  {
+  localeName: 'Español' ,
 
   title: 'Generador de lista de compras de Coronavirus',
   description:
@@ -170,12 +178,12 @@ const esLocale = {
       default:
         return str
     }
-  },
+  } ,
 
-  pluralize: (str: string, num: number) => {
-    const mod = num % 10
-    const form = (num >= 10 && num <= 20) || mod > 4 ? 2 : mod === 1 ? 0 : 1
-    return pluralizeForms[str][form]
+  pluralize : ( str : string ,  num : number )  =>  {
+    const  mod  =  num % 10
+    const  form  =  ( num > = 10  &&  num <= 20 )  ||  mod  >  4 ? 2 : mod  ===  1 ? 0 : 1
+    return  pluralizeForms [ str ] [ form ]
   }
 }
 export default esLocale
